@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Share);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
     font-family: 'Digital';
   src: url('https://jonathanfelipe.com.br/css3-calculator/font/Digital.eot');
@@ -7,6 +8,14 @@
 
 body{
 background:url('http://fc05.deviantart.net/fs32/f/2008/227/4/a/Ibex_Wallpaper_by_willwill100.png');
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
+flex-direction: column;
+height: 100vh;
+font-family: 'Montserrat', sans-serif;
 }
 .result{
   background:#cecfac;
@@ -15,7 +24,7 @@ background:url('http://fc05.deviantart.net/fs32/f/2008/227/4/a/Ibex_Wallpaper_by
   margin:8px 0px 20px 10px;
   height:50px;
   overflow:hidden;
-  font-family:Digital;
+  font-family: 'Montserrat', sans-serif;
   text-align:right;
   line-height:46px;
   padding-right:10px;
@@ -62,10 +71,6 @@ height:75px;
 .calc{
   background:#c2c2c2;
   width:300px;
-  position:absolute;
-  top:20%;
-  left:50%;
-  margin-left:-150px;
   padding:10px;
   border-radius:5px;
   height:340px;
@@ -74,5 +79,4 @@ height:75px;
 }
 h1{
   color: #bed38e;
-  margin-left: 550px;
 }
