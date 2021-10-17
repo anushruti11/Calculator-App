@@ -3,10 +3,11 @@ $(".numbers").on('click','li',function(e){
     $v = $(this).html(),
     $r = $('.result');
     if($r.text()==0){$r.empty()}
+    if($v==="." && $r.text().includes(".")) return;
     if($v==="=" ) {
       r = eval($r.text());
       $r.empty().append(r);
       return true;}
-    if($v==="c" ) {$r.empty().append(0);return true;}
+    if($v==="c" ) {$r.empty().append(0); return true;}
     $r.append($v)
-  })
+  });
